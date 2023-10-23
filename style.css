@@ -1,110 +1,176 @@
-body {
-    margin:0;
-    padding: 0;
-    background-color:#F5DEB3;
-      }
-  
-  /* Navigation */
-  
-  .navigation {
-  
-    margin:15;
+*{
     box-sizing: border-box;
-    background-color: #863808;	
-    background-size: cover; /* pour ajuster l'image à la taille de l'écran */
-    overflow: auto;
-    padding: 18px 50px;
-    position: relative;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-              }
-      .interface
-              {
-      background-color: white;
-      background-size: cover;
-      width:100%;
-              }
-  ul {
-    padding: 0;
     margin: 0;
-      }
-  
-  li  {
-    color: #FFF;
+    padding:0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#fff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+header{
+    background-color:#d1224e;
+    color: #fff;
+     }
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.main-nav h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: xxx-large;
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+.main-nav  ul{
+    display:flex;
+}
+
+.main-nav ul li{
+    padding: 0 10px;
+}
+.main-nav ul.header.main-nav{
+    flex: 1;
+    margin-left: 20px;
+
+
+}
+.main-nav ul li {
+    padding: 0 10px; 
+}
+
+.main-nav ul li a{
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+
+}
+ 
+
+
+.main-nav ul.main-menu{
+    flex:1;
+    margin-left: 20px;
+    
+}
+
+.btn{
+    cursor: pointer;
     display: inline-block;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    margin: 0;
-    padding: 20px 18px 10px 18px;
-    text-transform: uppercase;
-      }
-  
-  .active {
-    color: #88CCF1;
-  }
-  
-  /* Table */
-  
-      table {
-    height: 40%;
-    left: 10%;
-    margin: 20px auto;
-    overflow-y: scroll;
-    position: static;
-    width: 80%;
-          }
-  
-      thead th {
-    background: #28CCF1;
-    color: #FFF;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-              }
-  
-          tr {
-    background: #f4f7f8;
-    border-bottom: 1px solid #FFF;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #d1224e;
+    color:#fff;
+    font-size: 15px;
+    
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.showcase{
+    width: 100%;
+    height: 600px;
+    background: url('./img/pancakes.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+.showcase h2, .showcase p{
+    margin-bottom: 10px;
+    font-size: xx-large;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.showcase .btn{
+    margin-top: 20px;
+}
+
+.home-cards{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.home-cards img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-cards h3{
     margin-bottom: 5px;
-              }
-  
-      th, td {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    padding: 20px;
-    text-align: left;
-    width: 33.3333%;
-          }
-  
-          .search {
-    background-color: #FFF;
-    border: 1px solid #DDD;
-    border-radius: 3px;
-    color: #AAA;
-    padding: 20px;
-    margin: 50px auto 0px auto;
-    width: 77%;
-                  }
-      button {
-      display: inline-block;
-      background-color:#F5DEB3;
-      border-radius: 30px;
-      border: 0px double white;
-      color: white;
-      text-align: center;
-      font-size: 20px;
-      padding: 15px;
-      width: 200px;
-     -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5px;
-       font-family: 'Lato', sans-serif;
-              }
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.home-cards p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home-cards a{
+    display: inline-block;
+    padding-top: 10px;
+    color:#d1224e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-cards a:hover i{
+    margin-left: 10px;
+}
+
+.pasta{
+    width: 100%;
+    height: 350px;
+    background: url('img/pasta\ bolognese.png') no-repeat center center/cover;
+    margin-bottom: 60px;
+}
+
+.pasta .content{
+    width: 40%;
+    padding: 50px 0 0 30px;
+}
+.pasta h2{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.pasta p{
+    margin: 10px 0 20px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#fff;
+}
