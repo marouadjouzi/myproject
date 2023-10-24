@@ -1,0 +1,128 @@
+body {
+    margin:0;
+    padding: 0;
+    background-color:white;
+	background-size:cover; /* Empêche la répétition de l'image de fond. */
+	background-position: center;
+      }
+  
+  /* Navigation */
+  
+  .navigation {
+  
+    margin:15x;
+    box-sizing: border-box;
+    background-color:#d1224e	;	
+    background-size: cover; /* pour ajuster l'image à la taille de l'écran */
+    overflow: auto;
+    padding: 8px 20px;
+    position: relative;
+    top: -10px;
+	bottom:-80px;
+    width: 100%;
+    z-index: 999;
+
+              }
+      .interface
+              {
+      background-color: white;
+      background-size: cover;
+      width:100%;
+              }
+  ul {
+    padding: 0;
+    margin: 0;
+	
+      }
+  
+  li  {
+    color: #000011;
+    display: inline-block;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 20px 18px 10px 18px;
+    text-transform: uppercase;
+	position: relative;
+	left:65px;
+	top:5px;
+      }
+  
+  .active {
+    color: #88CCF1;
+  }
+  
+          .search {
+    background-color: #FFF;
+    border: 1px solid #d1224e;
+    border-radius: 3px;
+    color:#d1224e ;
+    padding: 20px;
+    margin: 80px auto 0px auto;
+    width: 77%;
+                  }
+    button {
+      display: inline-block;
+      background-color:#F08080		;
+      border-radius: 30px;
+      border: 2px double white;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      padding: 10px;
+      width: 150px;
+     -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: px;
+      font-family: 'Segoe UI', sans-serif;
+	  position: relative;
+      top:-20px;
+	  left: 300px;
+              }
+.l1{    color: #000011;
+    display: block;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 20px 18px 10px 18px;
+    text-transform: uppercase;
+	position: relative;
+	left:10px;
+	top:5px;
+	
+}
+.wel{
+	display:block;
+	font-family:"Chau Phimomene One",sans serif;
+	font-size:40px;
+	letter-spacing:3px;
+	Color:#CD853F;
+	text-align:center;
+	
+}
+.REPIC{
+	  border-radius: 30px;
+      border: 1px double #d1224e ;
+	  position:center;
+	  background-color:#F08080;
+
+	
+}
+.recipes{
+	display:inline-block;
+	margin:0;
+	position:relative;
+	right:30px;
+}
+figcaption{
+	position:center;
+	 font-family: 'Segoe UI', sans-serif;
+	 font-size:20px;
+	 
+}
