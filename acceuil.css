@@ -18,18 +18,8 @@ display:block
   overflow: auto;
   padding: 8px 20px;
   position: relative;
-  top: -10px;
-bottom:-80px;
-  width: 100%;
-  z-index: 999;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 
-            }
-    .interface
-            {
-    background-color: white;
-    background-size: cover;
-    width:100%;
             }
 ul {
   padding: 0;
@@ -47,9 +37,9 @@ li  {
   margin: 0;
   padding: 20px 18px 10px 18px;
   text-transform: uppercase;
-position: relative;
-left:65px;
-top:5px;
+  position: relative;
+  left:65px;
+  top:5px;
     }
 
         input{
@@ -60,11 +50,11 @@ top:5px;
   padding: 10px;
   margin: 10px auto 0px auto;
   width: 100%;
-position: relative;
+  position: relative;
   top:-20px;
   left: 250px;
- border-radius: 30px;
-    border: 2px double white;
+  border-radius: 30px;
+  border: 2px double white;
                 }
 
   button {
@@ -75,34 +65,16 @@ position: relative;
     color: white;
     text-align: center;
     font-size: 20px;
-    padding: 10px;
-    width: 150px;
-   -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+    width: 100px;
+	padding:10px;
     cursor: pointer;
-    margin: px;
     font-family: 'Segoe UI', sans-serif;
-  position: relative;
+	position: relative;
     top:-20px;
-  left: 100px;
-            }
-.l1{    color: #000011;
-  display: block;
-  font-family: 'Chau Philomene One', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin: 0;
-  padding: 20px 18px 10px 18px;
-  text-transform: uppercase;
-position: relative;
-left:10px;
-top:5px;
-
-}
+	left: 100px;
+				}
 .Dessert{
-background-image:url("C:Users/Tassili/Downloads/first.png" );
+background-image:url("./first.png" );
 background-size:cover;
 width:100%;
 padding: 120px;
@@ -120,18 +92,15 @@ text-align:center;
   
   
 }
-figcaption{
-text-align:center;
- font-family: 'Segoe UI', sans-serif;
- font-size:20px;
-}
 .Platprincipale{
-background-image:url("C:/Users/Tassili/Downloads/second.png" );
+background-image:url("./second.png");
 background-size:cover;
 width:100%;
 padding: 120px ;
+margin:auto;
 box-sizing: border-box;
 border: 1px double #d1224e;
+
 
 }
 h1{
@@ -141,24 +110,27 @@ font-size:50px;
 color:#d1224e;
 }
 .salade{
-background-image:url("C:/Users/Tassili/Downloads/salade.png");
+background-image:url("./salade.png");
 background-size:cover;
 width:100%;
 margin:auto;
 padding: 120px ;
 box-sizing: border-box;
+box-sizing: border-box;
+border: 1px double #d1224e;
 
 
 
 }
 .drinks{
-background-image:url("C:/Users/Tassili/Downloads/drinks.png");
+background-image:url("./drinks.png");
 background-size:cover;
 width:100%;
 margin:auto;
 padding: 120px ;
 box-sizing: border-box;
-
+box-sizing: border-box;
+border: 1px double #d1224e;
 }
 h2{
 text-align:center;
@@ -186,11 +158,27 @@ margin:auto;
   box-sizing: border-box;
   background-color:#d1224e	;	
   background-size: cover; /* pour ajuster l'image à la taille de l'écran */
-  overflow: auto;
-  padding: 100px;
+  overflow: 15px;
+  padding:20px;
   position: relative;
   width: 100%;
   z-index: 999;
-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
-
 }
+.contacte{
+  display: inline-block;
+  text-align:leftwards;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 300px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 20px 18px 10px 18px;
+  text-transform: uppercase;
+  position:left;
+}
+a {
+  text-decoration: none; /* Pour s'assurer que le lien est souligné */
+  text-decoration-color: white; /* Couleur de soulignement que vous souhaitez */
+}
+
+

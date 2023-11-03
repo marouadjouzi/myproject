@@ -1,51 +1,125 @@
 <!DOCTYPE html>
-<html lang="fr">
-<meta charset="UTF-8">
+<html lang="en">
 <head>
-  <title>L'Art Culinaire</title>
-  <link rel="stylesheet"  href="acceuil.css">
-  <script src="./jquery-3.5.1.js"></script>
-  <script src="./acceuil.js"></script>
-  </head>
- <body>
-  <ul class="navigation"> <!--l'entet de suite-->
-   <li><img src=".\logo.png" height="65px"></li> <!--le logo-->
-    <li><a href="#"><button>Acueil</button></a></li>
-    <li><button>Nous</button></li>
-	<li><input type="text"></input></li>
-  </ul>
-  <br>
-  <br>
-  <h3><b><em>"La cuisine est l'art de transformer des ingrédients simples en de délicieuses œuvres d'art."</b></em></h3>
-  <h3><b><em>""Trouvez l'inspiration pour vos repas quotidiens dans notre collection de recettes faciles et rapides."</b></em></h3>
-  <br>
-  <br>
-  
-  
-  <div class="recipes">
-    <div class="Platprincipale">
-  <a href=".\platprincipale.html"><mark><b><em>Plat Principale</b></em></mark></a>
-</div>  
-<br>
-<div class="salade">
-<mark><b><em>Salade</b></em><mark>
-</div>
-<br>
- <div class="Dessert">
-	 <a href=".\acceuil sucre.html">
-		
-<mark><b><em>Dessert</b></em><mark>
-  </div>
-   </a>
-  <br>
-<div class="drinks">
-<mark><b><em>Boissons</b></em><mark>
-</div>
-</div>
-<footer>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="acceuil sucre.css">
+    
+</head>
+<body>
+    
+    <title>categorie dessert</title>
+     <header>
+     
+        <div class="container">
+            <nav class="main-nav">
+               <img src="./logo.png" alt="l'art culinaire" class="logo">
+                <h1>Dessert</h1>
+               
+                <ul class="main-menu">
+                    <li><a href=".\acceuil.html"><button>Aceuil</button></a></li>
+                    <li><a href="#"><label for="categorie"></label>
+     
+                    <button> <select name="categorie" id="id-categorie"></button>
+                       
+                       <option value="Dessert">Dessert</option>
+                       <option value="Plat-principale">Plat principale</option>
+                       <option value="Boisson">Boisson</option>
+                       <option value="Salade">Salade</option>
+                       
+                     </select>
+                     </a></li>
+                    <li><a href="#"><button>nous</a></button></li>
+                    
+                </ul>
+                <ul class="right menu">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                         </a>
+                         <a href="#">
+                             <i class="fas fa-table"></i>
+                         </a>
+                    </li>
+                </ul>
+                </nav>
+         </div>
+         </header>  
+        
+         <section class="home-cards">
+            <div>
+                <img src="./fondant aux chocolat.jpg" alt="">
+                <h3>Chocolate Fondant</h3>
+                <p>  it is commonly known as chocolate fondant or, occasionally, chocolate lava cake. A pudding that's also a conjuring trick</p>
+                <a href="#">Learn more<i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div>
+                <img src="./lemon cupcake.jpg" alt="">
+                <h3>Lemon Cupcake</h3>
+                <p> A lovely, light, lemony sponge with a delicious icing topper, these perfect little lemon cupcakes are the ideal recipe for afternoon tea or kids parties.</p>
+                <a href="#">Learn more<i class="fas fa-chevron-right"></i></a> 
+            </div>
+            <div>
+                <img src="./strawberry cake.jpg" alt="">
+                <h3>Strawberry Cake</h3>
+                <p>  It's soft and flaky in the middle with a crisp outer edge and it's typically topped off with fresh strawberry slices or strawberry sauce!</p>
+                <a href="#">Learn more<i class="fas fa-chevron-right"></i></a> 
+            </div>
+            <div>
+                <img src="./panna cotta.jpg" alt="">
+                <h3>Panna Cotta</h3>
+                <p>Full of aromatic sweet vanilla flavor and then topped with a fresh berry sauce, this easy authentic Panna Cotta recipe is so delicious.</p>
+                <a href="#">Learn more<i class="fas fa-chevron-right"></i></a> 
+            </div>
+        </section>
+        <section class="pasta">
+            <div class="content">
+                <h2>Pasta Bolognese</h2>
+                <p>You can fount all types of food you want to cook Pasta Tadjines Fish and a lot of succesfull recepies,
+                   What are you waiting..
+                    Let's cook together </p>
+                <a href="@" class="btn">
+                    Check Now <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </section>
+
+       
+        <section class="home-cards">
+            <div>
+                <img src="./tarte aux pommes.jpg" alt="">
+                <h3>Apple Pie</h3>
+                <p>  it is commonly known as chocolate fondant or, occasionally, chocolate lava cake. A pudding that's also a conjuring trick</p>
+                <a href="#">Learn more<i class="fas fa-chevron-right"></i></a> 
+            </div>
+            <div>
+                <img src="./tiramisu.jpg" alt="">
+                <h3>Tiramisu</h3>
+                <p> Tiramisu is a classic Italian no-bake dessert made with layers of coffee-soaked ladyfingers and incredible mascarpone cream.</p>
+                <a href="#">Learn more<i class="fas fa-chevron-right"></i></a> 
+            </div>
+            <div>
+                <img src="./cookies.jpg" alt="">
+                <h3>Cookies</h3>
+                <p>  The recipe is really easy and quick to make! No need to place the batter in the fridge to rest.                           </p>
+                <a href="#">Learn more<i class="fas fa-chevron-right"></i></a> 
+            </div>
+            <div>
+                <img src="./mousse aux chocolat.jpg" alt="">
+                <h3>Chocolate Mousse</h3>
+                <p>Only two ingredients, no-bake : eggs and chocolate. No whipped cream, no butter, no sugar. Eventually a pinch of salt to enhance flavors is tolerated.</p>
+                <a href="#">Learn more<i class="fas fa-chevron-right"></i></a> 
+            </div>
+        </section>
+
+    </div>  
+	<footer>
+	
 <ul>
 <li class="contacte"><img src=".\f2.png" height="130px"></li>
 </ul>
+</div>
 </footer>
 </body>
 </html>
