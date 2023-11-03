@@ -41,3 +41,14 @@ $(document).ready(function() {
     }
   );
 });
+$(document).ready(function() {
+ 
+  $("button").hover(
+    function() { 
+      $(this).css("width", "150px"); 
+    },
+    function() {
+      $(this).css("width", "100px"); 
+    }
+  );
+});
