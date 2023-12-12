@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <title>planner</title>
+</head>
+<body>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="imag-text">
+                <span class="image">
+                    <img src="" alt="">
+                </span>
+                <div class="text header-text">
+                 <span class="name">Organiser</span>
+                 <span class="profession">Votre cuisine</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                
+                  <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Mon compte</span>
+                    </a>
+                  </li>
+                  <li class="nav-link">
+                    <a href="planner.php">
+                        <i class='bx bx-book-reader icon'></i>
+                        <span class="text nav-text">Mon plannificateur</span>
+                    </a>
+                  </li>  
+                  <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-bowl-hot icon'></i>
+                        <span class="text nav-text">Mes recettes</span>
+                    </a>
+                  </li>  
+                  <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-cart-add icon' ></i>
+                        <span class="text nav-text">Mes courses</span>
+                    </a>
+                  </li>    
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Deconnecter</span>
+                    </a>
+               </li> 
+               <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon' ></i>
+                        <i class='bx bx-sun icon sun' ></i>
+                    </div>
+                    <span class="mode-text text">Mode sombre</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+               </li>       
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+		<div class="lists">
+		<div class="list"> 
+		<h1>Légume/Fruits <i class='fas fa-apple-alt'></i> <i class='fas fa-carrot'></i></h1>
+		<div class="row">
+		<input type="text" id="input-box" placeholder="Entrer">
+		<button onclick="add()">Ajoute</button>
+		</div>
+		<ul id="list-container">
+		<!--
+		<li class="checked">Task 1</li>
+		<li>Task 2</li>
+		<li>Task 3</li>
+		-->
+		</ul> 
+		</div>
+		<div class="list"> 
+		<h1>Viande  <i class='fas fa-drumstick-bite'></i></h1>
+		<div class="row">
+		<input type="text" class="input-box" placeholder="Vinade">
+		<button onclick="add()">Ajoute</button>
+		</div>
+		<ul id="list-container">
+		<!--
+		<li class="checked">Task 1</li>
+		<li>Task 2</li>
+		<li>Task 3</li>
+		-->
+		</ul>
+		</div>
+		<div class="list"> 
+		<h1>épices</h1>
+		<div class="row">
+		<input type="text" class="input-box" placeholder="Entrer">
+		<button onclick="add()">Ajoute</button>
+		</div>
+		<ul id="list-container">
+		<!--
+		<li class="checked">Task 1</li>
+		<li>Task 2</li>
+		<li>Task 3</li>
+		-->
+		</ul>
+		</div>
+		
+			<div class="list"> 
+		<h1>épices</h1>
+		<div class="row">
+		<input type="text" class="input-box" placeholder="Entrer">
+		<button onclick="add()">Ajoute</button>
+		</div>
+		<ul id="list-container">
+		<!--
+		<li class="checked">Task 1</li>
+		<li>Task 2</li>
+		<li>Task 3</li>
+		-->
+		</ul>
+		</div>
+		<div class="list"> 
+		<h1>Ravaitaiment</h1>
+		<div class="row">
+		<input type="text" id="input-box" placeholder="Entrer">
+		<button onclick="add()">Ajoute </button>
+		</div>
+		<ul id="list-container">
+		<!--
+		<li class="checked">Task 1</li>
+		<li>Task 2</li>
+		<li>Task 3</li>
+		-->
+		</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+    </section>
+    <script src="courses.js"></script>
+</body>
+</html>
