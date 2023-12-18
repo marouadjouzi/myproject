@@ -312,3 +312,39 @@ input {
 .social-container a:hover {
   border: 1px solid  #f09cfe;
 }
+.language-switcher {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	display:flex;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.language-icon {
+    
+	justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    min-width: 60px;
+    cursor: pointer;
+}
+
+.language-text {
+    font-size: 16px;
+}
+
+.sidebar  .language-switcher .icon{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    min-width: 60px;
+    cursor: pointer;
+}

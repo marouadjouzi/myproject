@@ -7,13 +7,13 @@
 }
 
 :root{
-    --body-color:#fffacd;
+    --body-color: lemonchiffon;
     --sidebar-color:#fff;
     --primary-color:#f09cfe;
     --primary-color-light:#F6F5FF;
     --toggle-color:#DDD;
     --text-color:#707070;
-	--list-color:#fff;
+	--popup-color:#f09cfe;
 
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -24,10 +24,7 @@ body{
     height: 100vh;
     background: var(--body-color);
     transition: var(--tran-05);
-	overflow: hidden;
-	overflow-y: auto; 
 }
-
 body.dark{
     --body-color: #18191A;
     --sidebar-color:#242526;
@@ -35,7 +32,7 @@ body.dark{
     --primary-color-light:#3A3B3C;
     --toggle-color:#fff;
     --text-color:#CCC;
-	--list-color:#696969;
+	--popup-color:#696969;
 
 }
 
@@ -49,6 +46,7 @@ body.dark{
     background:var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;
+    margin-right: 2500px;
 }
 .sidebar.close{
     width: 88px;
@@ -208,6 +206,7 @@ body.dark .sidebar li a:hover .text{
     transition: var(--tran-05);
 
 }
+
 .toggle-switch .switch{
     position: relative;
     height: 22px;
@@ -231,16 +230,14 @@ body.dark .switch::before{
     left: 24px;
 }
 .home{
-    display: flex;
-    position: relative;
-    left: 250px;
-    padding: auto;
-    min-height: 100vh;
-    width: calc(100% - 88px);
+    position: absolute;
+    margin-left: 230px;
+    height:100vh;
+    width: calc(100% - 250px);
     transition: var(--tran-05);
-    background: var(--body-color);
-	flex-wrap: wrap;
-	
+    background:var(--body-color);
+    justify-content: center;
+
 }
 .home .text{
     font-size: 30px;
@@ -252,132 +249,193 @@ body.dark .switch::before{
     left: 88px;
     width: calc(100% - 88px); 
 }
-.lists{
-	display: flex;
-    padding: auto;
-    min-height: 100vh;
-    width: calc(100% - 88px);
-    transition: var(--tran-05);
-    background: var(--body-color);
-	flex-wrap: wrap;
-	margin:30px 10px 20px;
-	position:relative;
+ 
+.home  .up{
+    display: flex;
+    position: relative;
 }
-.list{
-	width:40%;
-	max-width:500px;
-	background:var(--list-color);
-    transition: var(--tran-05);
-	margin:30px 10px 20px;
-	padding:20px 50px 70px;
-	border-radius:10px;
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.home h1{
-	 font-size: 30px;
-    font-weight: 500;
-    color: var(--text-color);
-	
-}
-.row{
-	display:flex;
-	align-items:center;
-	justify-content:space-between;
-	background:#edeef0;
-	border-radius:30px;
-	padding-left:20px;
-	margin-bottom:25px;
-}
-.home .list .row input{
-	flex:1;
-	border:none;
+.home  .show-login{
+    border:none;
 	outline:none;
-	background:transparent;
-	padding:5px;
-}
-.home .list .row  button{
-	border:none;
-	outline:none;
-	padding:5px 15px;
 	background:#f09cfe;
 	color:#fff;
-	font-size:16px;
 	cursor:pointer;
 	border-radius:40px;
+	padding: 20px 30px;
+	font-size: 29px;
+	font-weight: 600;
+	margin-left: 40px;
 }
-.home .list .row  button:hover{
+.home .show-login:hover{
 	background:#e079da;
 }
-
-.home .list  ul li{
-	list-style:none;
-	font-size:17px;
-	padding:12px 8px 12px 50px;
-	user-select:none;
-	cursor:pointer;
-	position:relative;
-}
-.home .list  ul li::before{
-	content:'';
-	position:absolute;
-	height:28px;
-	width:28px;
-	border-radius:50%;
-	background-image:url('\unchecked.png');
-	background-size:cover;
-	background-position:center;
-	top:12px;
-	left:8px;	
-}
-ul li.checked{
-	color:#555;
-	text-decoration:line-through;
-}
-.home .lists .list ul li.checked::before{
-	background-image:url('\vrf.png');
-}
-.home .lists .list ul li span{
-	position:absolute;
-	right:0;
-	top:5px;
-	width:40px;
-	height:40px;
-	font-size:22px;
-	color:#555;
-	line-height:40px;
-	text-align:center;
-	border-radius:50px;
-}
-.home .lists .list ul li span:hover{
-	background:#edeef0;
+.home   .popup {
+    position: absolute;
+    top: -200%;
+    left: 75%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 386px;
+    padding: 20px 30px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    
+	transition: var(--tran-05);
 }
 
-.home .text h1{
-	font-size: 35px;
-	
+.home .popup.active {
+    top:  155%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 20ms ease-in-out 0ms;
+    background:var(--popup-color) ;
+	transition:var(--tran-05);
 }
-.home .text h1{
 
-    color: #f09cfe;
-	transition: var(--text-color);
-
-}
-.home .imgs{
-	display:flex;
-	position:relative;
-	left:150px;
-}
-.sidebar li .Langue .icon{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    min-width: 60px;
+.home .popup .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    width: 29px;
+    height: 30px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 22px;
     cursor: pointer;
 }
-/* Ajoutez vos styles CSS ici */
 
+.home .popup .form form {
+    margin: 15px 0px;
+}
+
+.home .popup .form form label {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #18191A;
+}
+
+.home .popup .form form input {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #18191A;
+}
+
+.home .popup .form form .envoi input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    background: #b715d6;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home .text .up  button:hover {
+    background: #f09cfe;
+    color: #fff;
+}
+
+.home .contenu-carte form input .btn {
+    background: #b182bb;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 5px 30px;
+    text-decoration: none;
+}
+
+.contenu-carte form .btn:hover {
+    background: #d1224e;
+    color: #fff;
+}
+
+.home .contenu-carte  .popup1 {
+    position: absolute;
+    top: -200%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 386px;
+    padding: 20px 30px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+}
+
+.home .contenu-carte .popup1.active {
+    top: 112%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 20ms ease-in-out 0ms;
+    background: #b715d6;
+}
+
+.home  .contenu-carte .popup1 .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    width: 29px;
+    height: 30px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.home .contenu-carte  .popup1 .form form {
+    margin: 15px 0px;
+}
+
+.home .contenu-carte .popup1 .form form label {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #18191A;
+}
+
+.home .contenu-carte .popup1 .form form input {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #18191A;
+}
+
+.home .contenu-carte .popup1 .form form .envoi input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    background: #b715d6;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
 .language-switcher {
     list-style: none;
     padding: 0;

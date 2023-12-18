@@ -19,8 +19,8 @@ const body = document.querySelector("body"),
             modeText.innerText = "Mode clair";
         }
     });
-
-    function Popup(){
+	
+ function Popup(){
         document.getElementById("popup").classList.toggle("active");
      }
             document.querySelector(".popup .close-btn").addEventListener("click", function() {

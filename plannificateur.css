@@ -281,3 +281,50 @@ table {
     height: 2cm; /* hauteur des cellules */
   }
   
+.sidebar li .Langue .icon{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    min-width: 60px;
+    cursor: pointer;
+}
+/* Ajoutez vos styles CSS ici */
+
+.language-switcher {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	position:relative;
+	left:10px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.language-icon {
+    
+	justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    min-width: 60px;
+    cursor: pointer;
+}
+
+.language-text {
+    font-size: 16px;
+}
+
+.sidebar  .language-switcher .icon{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    min-width: 60px;
+    cursor: pointer;
+}

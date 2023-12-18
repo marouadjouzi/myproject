@@ -2,7 +2,7 @@
  $servername = "localhost";
  $username = "root";
  $password = "";
- $dbname = "repertoir";
+ $dbname = "artculinaire";
 
  try{
      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username,$password);
@@ -42,6 +42,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="plannificateur.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
     <title>plannificateur</title>
 </head>
 <body>
@@ -64,7 +65,7 @@
                 <ul class="menu-links">
                 
                   <li class="nav-link">
-                    <a href="#">
+                    <a href="user.php">
                         <i class='bx bx-home-alt icon'></i>
                         <span class="text nav-text">Mon compte</span>
                     </a>
@@ -76,13 +77,13 @@
                     </a>
                   </li>  
                   <li class="nav-link">
-                    <a href="planner.php">
+                    <a href="Mesrecette.php">
                         <i class='bx bx-bowl-hot icon'></i>
                         <span class="text nav-text">Mes recettes</span>
                     </a>
                   </li>  
                   <li class="nav-link">
-                    <a href="#">
+                    <a href="courses.php">
                         <i class='bx bx-cart-add icon' ></i>
                         <span class="text nav-text">Mes courses</span>
                     </a>
@@ -90,8 +91,26 @@
                 </ul>
             </div>
             <div class="bottom-content">
+			<ul class="language-switcher">			   
+			<li class="language">
+			<a href="arabeplannificateur.php">
+            <div class="flag-icon language-icon">
+            <i class="flag-icon flag-icon-sa"></i>
+            </div>
+            <span class="language-text text">Arabe</span>
+			</a>
+			</li>
+			<li class="language">
+			 <a href="#">
+            <div class="flag-icon language-icon">
+           <i class="flag-icon flag-icon-fr"></i>
+            </div>
+            <span class="language-text text">Français</span>
+			</a>
+			</li>
+			</ul>
                 <li class="">
-                    <a href="#">
+                    <a href="deconnexion.php">
                         <i class='bx bx-log-out icon' ></i>
                         <span class="text nav-text">Deconnecter</span>
                     </a>
@@ -175,20 +194,20 @@
   <thead>
     <tr>
       <th></th>
-      <th><img src="dimanche.jpg"></th>
-      <th><img src="lundi.jpg"></th>
-      <th><img src="mardi.jpg"></th>
-      <th><img src="mercredi.jpg"></th>
-      <th><img src="jeudi.jpg"></th>
-      <th><img src="vendredi.jpg"></th>
-      <th><img src="samedi.jpg"></th>
+      <th><img src="photo\dimanche.jpg"></th>
+      <th><img src="photo\lundi.jpg"></th>
+      <th><img src="photo\mardi.jpg"></th>
+      <th><img src="photo\mercredi.jpg"></th>
+      <th><img src="photo\jeudi.jpg"></th>
+      <th><img src="photo\vendredi.jpg"></th>
+      <th><img src="photo\samedi.jpg"></th>
       
     </tr>
   </thead>
   <tbody>
      
    <tr>
-      <td><img src="petitdejeuner.jpg"></td>
+      <td><img src="photo\petitdejeuner.jpg"></td>
       <td ><p id="d1" class="d1"><form action="plannificateur.php" method="post">
               <input type="hidden" name="id" id="id1" value="">
               <input type="submit" name="supprimer" class="supprimer" value="supprimer" style="border-radius: 5px;font-size: 14px;margin-top: 71px;background: teal;color: aliceblue;border: none;padding: revert;">
@@ -219,7 +238,7 @@
             </form></p></td>      
     </tr>
     <tr>
-      <td><img src="dejeuner.jpg"></td>
+      <td><img src="photo\dejeuner.jpg"></td>
       <td ><p id="d2" class="d2"><form action="plannificateur.php" method="post">
               <input type="hidden" name="id" id="id2" value="">
               <input type="submit" name="supprimer" class="supprimer" value="supprimer" style="border-radius: 5px;font-size: 14px;margin-top: 71px;background: teal;color: aliceblue;border: none;padding: revert;">
@@ -251,7 +270,7 @@
       
       </tr>
       <tr>
-      <td><img src="diner.jpg"></td>
+      <td><img src="photo\diner.jpg"></td>
       <td ><p id="d3" class="d3"><form action="plannificateur.php" method="post">
               <input type="hidden" name="id" id="id3" value="">
               <input type="submit" name="supprimer" class="supprimer" value="supprimer" style="border-radius: 5px;font-size: 14px;margin-top: 71px;background: teal;color: aliceblue;border: none;padding: revert;">
